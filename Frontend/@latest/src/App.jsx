@@ -11,8 +11,8 @@ import Hero7 from './Components/Hero7'
 
 function App() {
   return (
-    <main className="bg-[#000D12] min-h-screen text-white">
-      <div className="max-w-7xl mx-auto ">
+    <main className="bg-[#000D12] min-h-screen text-white overflow-x-hidden">
+      
         <Navbar />
         <Hero />
         <Hero2 />
@@ -21,7 +21,7 @@ function App() {
         <Hero5 />
         <Hero6 />
         <Hero7/>
-      </div>
+     
     </main>
   )
 }

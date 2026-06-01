@@ -1,9 +1,9 @@
 import React from 'react'
 import Marquee from './Marquee'
 import { FaArrowRight } from 'react-icons/fa'
-import Iphone from '../assets/iphone 13 Pro.png'
-import Iphone2 from '../assets/iphone 13 Pro2.png'
-import Iphone1 from '../assets/iphone 13 Pro1.png'
+import Iphone from '../assets/iPhone 13 Pro.png'
+import Iphone2 from '../assets/iPhone 13 Pro2.png'
+import Iphone1 from '../assets/iPhone 13 Pro1.png'
 
 function Hero6() {
   const text = [

@@ -14,8 +14,12 @@ function Hero4() {
   { text: "Establishing criteria for minimum balances, interest rates, number of withdrawals allowed and so on." }
     ]
   return (
-    <section className='gap-10 mt-[200px] relative grid grid-cols-2'>
-        <img src={graph1} alt="" />
+    <section className='gap-10 mt-[100px] lg:mt-[200px] relative grid grid-cols-1 lg:grid-cols-2 items-center px-4 lg:px-0'>
+        <img
+  src={graph1}
+  alt=""
+  className='w-full h-auto max-w-[700px] mx-auto'
+/>
         <div className='p-20 '>
             <h1 className='text-3xl'>Run a more efficient, flexible,and digitally <br /> connected corebanking system</h1>
             <p className='mt-4'>What you will get:</p>

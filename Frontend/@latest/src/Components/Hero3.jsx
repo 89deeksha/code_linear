@@ -4,14 +4,14 @@ import graph1 from '../assets/Frame 89.png'
 
 function Hero3() {
   return (
-    <section className='relative grid grid-cols-1 lg:grid-cols-2'>
+   <section className='relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 px-4 lg:px-8'>
         <h1
   className="
     absolute
     left-[-70px]
     top-1/2
     -translate-y-1/2
-    text-[425px]
+    text-[120px] sm:text-[200px] lg:text-[425px]
     font-bold
     text-transparent
     select-none

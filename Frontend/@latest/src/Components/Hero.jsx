@@ -9,11 +9,10 @@ import logo5 from '../assets/logo5.png'
 
 function Hero() {
   return (
-    <section className='relative max-w-7xl mx-auto overflow-hidden  md:px-2 pt-20 '>
+    <section className='relative max-w-7xl mx-auto overflow-hidden  px-4 sm:px-6 lg:px-8 pt-12 lg:pt-20'>
 <div className='absolute right-4
         top-20
-        w-[300px]
-        h-[300px]
+        
        bg-gradient-to-r from-[#00B4FD] to-[#003ACE]
         blur-[100px]
         rounded-full'>
@@ -23,7 +22,7 @@ function Hero() {
 </div>
 <div className='relative z-10 max-w-4xl'>
         <h2
-          className='text-white text-xl sm:text-5xl md:text-7xl
+          className='text-white text-xl sm:text-5xl md:text-7xl lg:text-7xl 
           font-medium leading-tight '
         >
           The new foundation <br />
@@ -69,9 +68,9 @@ function Hero() {
                 CONTACT US
               </button>
             </div>
-            <div className='flex flex-col mt-25'>
+            <div className='flex flex-col mt-25 '>
         <p className='text-white'>Trusted By:</p>
-        <div className='flex gap-3 '>
+        <div className='flex gap-3 md:flex-wrap'>
           <div className='flex mt-2 gap-2 font-bold'>
           <img src={logo1} alt="" />
           <p className='text-[#586E84]'>Shell</p>
@@ -98,26 +97,27 @@ function Hero() {
           </div>
         </div>
       </div>
-           <div className="relative lg:absolute right-0  top-24 w-fit sm:flex-col ">
+           <div className="relative lg:absolute right-0 top-24 w-full lg:w-fit mt-10 lg:mt-0">
   <img
     src={img1}
     alt=""
-    className="w-[550px]  rounded-xl object-contain"
+   className="w-full max-w-[550px] rounded-xl object-contain"
 
   />
   <div
     className='
-      absolute md:absolute
-left-0 md:left-[-140px]
-      bottom-[-1px]
-      bg-white
-      
-      backdrop-blur-md
-      rounded-3xl
-      px-3 py-2
-      w-[500px]
-      shadow-xl
-    '
+relative lg:absolute
+left-0 lg:left-[-140px]
+mt-4 lg:mt-0
+lg:bottom-[-1px]
+bg-white
+backdrop-blur-md
+rounded-3xl
+px-3 py-2
+w-full
+max-w-[500px]
+shadow-xl
+'
   >
     <p className='text-black font-semibold text-xl'>
       Recent Activity
@@ -155,20 +155,21 @@ left-0 md:left-[-140px]
 </div>
  <div
   className='
-
-    absolute
-    
-    right-0
-    top-[1px]
-    bg-white
-    backdrop-blur-md
-    rounded-2xl
-    px-5
-    py-4
-    w-[260px]
-    
-    z-20
-  '
+relative
+lg:absolute
+lg:right-0
+lg:top-[1px]
+mt-6
+lg:mt-0
+bg-white
+backdrop-blur-md
+rounded-2xl
+px-5
+py-4
+w-full
+max-w-[260px]
+z-20
+'
 >
 
   <p className='text-black font-semibold text-lg'>

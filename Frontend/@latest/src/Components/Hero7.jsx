@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 export default function Hero7() {
   const insights = [1, 2, 3];
@@ -6,59 +7,76 @@ export default function Hero7() {
   return (
     <div className="bg-[#08111F] text-white">
       {/* Insights Section */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
-        <div className="grid lg:grid-cols-2 gap-12">
+      <section className="bg-[#02131B] min-h-screen px-4 sm:px-6 lg:px-12 py-12 lg:py-16">
+
+  <div className="grid lg:grid-cols-2 gap-20">
+
+    {/* Left Content */}
+    <div>
+      <h1 className="text-white text-3xl sm:text-5xl lg:text-6xl leading-tight max-w-md">
+        Get yourself up-to-speed on all the things happening in fintech
+      </h1>
+
+      <button className="mt-12 border border-white text-white px-10 py-3 rounded-lg">
+        INSIGHTS
+      </button>
+    </div>
+
+    {/* Right Content */}
+    <div>
+
+      {/* Top Featured Card */}
+    <div className="bg-[#041B24] rounded-2xl p-6 flex flex-col lg:flex-row gap-6">
+        <div className="w-[260px] h-[220px] bg-[#08235E] rounded-xl" />
+
+        <div className="flex flex-col justify-between">
           <div>
-            <h2 className=" md:text-5xl  leading-tight max-w-md">
-              Get yourself up-to-speed on all the things happening in fintech
-            </h2>
+            <p className="text-[#00B4FD] text-sm uppercase">
+              Getting Started
+            </p>
 
-            <button className="mt-8 px-8 py-3 border border-cyan-400 rounded-xl hover:bg-cyan-400/10 transition">
-              Insights
-            </button>
+            <h3 className="text-white text-4xl mt-4">
+              How to transition from a traditional to a digital bank
+            </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {insights.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-2xl bg-[#0E1C2E] border border-white/5 overflow-hidden"
-              >
-                {index === 0 && (
-                  <div className="bg-[#1D4CFF] p-8 grid grid-cols-2 gap-4">
-                    {[1, 2, 3, 4].map((x) => (
-                      <div
-                        key={x}
-                        className="h-20 rounded-2xl bg-cyan-300"
-                      />
-                    ))}
-                  </div>
-                )}
-
-                <div className="p-6">
-                  <span className="text-xs uppercase tracking-widest text-cyan-400">
-                    Getting Started
-                  </span>
-
-                  <h3 className="mt-3 text-xl font-bold leading-snug">
-                    How to transition from a traditional to a digital bank
-                  </h3>
-
-                  <button className="w-full mt-6 py-3 border border-cyan-400 rounded-xl text-sm font-medium">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            ))}
-
-            <div className="col-span-full text-right">
-              <button className="text-cyan-400 text-sm font-medium">
-                READ ALL INSIGHTS →
-              </button>
-            </div>
-          </div>
+          <button className="border border-gray-500 rounded-lg py-3 text-white">
+            READ MORE
+          </button>
         </div>
-      </section>
+      </div>
+
+      {/* Bottom Cards */}
+      <div className="grid md:grid-cols-2 gap-6 mt-8">
+
+        <div className="bg-[#041B24] rounded-2xl p-6">
+          <h3 className="text-white text-3xl">
+            How to transition from a traditional to a digital bank
+          </h3>
+
+          <button className="w-full border border-gray-500 rounded-lg py-3 mt-8 text-white">
+            READ MORE
+          </button>
+        </div>
+
+        <div className="bg-[#041B24] rounded-2xl p-6">
+          <h3 className="text-white text-3xl">
+            How to transition from a traditional to a digital bank
+          </h3>
+
+          <button className="w-full border border-gray-500 rounded-lg py-3 mt-8 text-white">
+            READ MORE
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  
+
+</section>
 
       {/* Case Studies */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
@@ -148,65 +166,7 @@ export default function Hero7() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-5 gap-12">
-            <div>
-              <h1 className="text-8xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent">
-                N7
-              </h1>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">London</h4>
-              <p className="text-sm text-gray-400 leading-7">
-                Linketa Systems Ltd
-                <br />
-                20 Main Road
-                <br />
-                London, United Kingdom
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Dubai</h4>
-              <p className="text-sm text-gray-400 leading-7">
-                Linketa Systems Ltd
-                <br />
-                Business Center
-                <br />
-                Dubai, UAE
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Solutions</h4>
-
-              <ul className="space-y-3 text-gray-400 text-sm">
-                <li>Core Banking</li>
-                <li>Digital Banking</li>
-                <li>Digital Wallet</li>
-                <li>Loan Management</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-
-              <ul className="space-y-3 text-gray-400 text-sm">
-                <li>About Us</li>
-                <li>Insights</li>
-                <li>Case Studies</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-16 border-t border-white/10 pt-8 text-center text-sm text-gray-500">
-            © 2025 N7. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

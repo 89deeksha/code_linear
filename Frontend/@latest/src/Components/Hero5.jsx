@@ -3,7 +3,7 @@ import React from 'react'
 function Hero5() {
   return (
     <section className="max-w-7xl mx-auto mt-20 px-4">
-  <div className="relative flex justify-center items-center h-[400px] rounded-xl p-6 bg-gradient-to-r from-[#031E2A] to-[#000D12] overflow-hidden">
+  <div className="relative flex justify-center items-centermin-h-[400px] lg:h-[400px] rounded-xl p-6 bg-gradient-to-r from-[#031E2A] to-[#000D12] overflow-hidden">
 
     <h1
       className="
@@ -26,7 +26,7 @@ function Hero5() {
       CB7
     </h1>
 
-    <div className="relative grid grid-cols-1 lg:grid-cols-2 z-10 items-center gap-10">
+    <div className="relative grid grid-cols-1 lg:grid-cols-2 z-10 items-center gap-8 lg:gap-10 text-center lg:text-left">
         <div>
       <h2 className="text-[50px] ">
        Take the full advantage of <br /> going paper less now.
